@@ -1,0 +1,9 @@
+{
+    "HELLO": "Hello {{value}}",
+    "LANG": {
+        "LABEL": "Select language:",
+        "BASQUE": "Basque",
+        "SPANISH": "Spanish",
+        "ENGLISH": "English"
+    }
+}

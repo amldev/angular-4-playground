@@ -1,0 +1,9 @@
+{
+    "HELLO": "Kaixo {{value}}",
+    "LANG": {
+        "LABEL": "Aukeratu hizkuntza:",
+        "BASQUE": "Euskara",
+        "SPANISH": "Gaztelania",
+        "ENGLISH": "Ingelesa"
+    }
+}
