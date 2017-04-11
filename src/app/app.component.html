@@ -5,9 +5,9 @@
 <p>
   {{ 'LANG.LABEL' | translate }}
 </p>
-<button type="button" >{{ 'LANG.BASQUE' | translate }}</button>
-<button type="button" >{{ 'LANG.SPANISH' | translate }}</button>
-<button type="button" >{{ 'LANG.ENGLISH' | translate }}</button>
+<button type="button" (click)= "changeLanguage('eu')">{{ 'LANG.BASQUE' | translate }}</button>
+<button type="button" (click)= "changeLanguage('es')">{{ 'LANG.SPANISH' | translate }}</button>
+<button type="button" (click)= "changeLanguage('en')">{{ 'LANG.ENGLISH' | translate }}</button>
  
 <!-- selectKey define output inside key-events that response to emit result-->
 <!-- keyChange event define inside this template component-->
