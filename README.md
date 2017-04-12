@@ -32,3 +32,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Keyboard Events: https://www.npmjs.com/package/ng-2-4keyboard-events
 * Ngx Translate (Core): https://github.com/ngx-translate/core
 * Ngx Translate (Http-loader): https://github.com/ngx-translate/http-loader 
+* Utilities: https://github.com/mugan86/ng-2-4-utilities (install in local in this moment)
