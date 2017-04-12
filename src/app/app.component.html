@@ -12,6 +12,35 @@
 <p>{{ 'all words in capitalize start' | allWordsCapitalize }} </p>
 <p> Anartz in reverse: "{{ 'Anartz' | reverseStr}}"
 
+
+<div class='panel panel-primary'>
+<div class="panel-body">
+ 
+<div class="row">
+    <h3>Fahrenheit to Celsius </h3>
+    <p> Fahrenheit : 32
+             Celsius : {{32 | tempConverter:'C'}} </p>
+</div>
+ 
+<div class="row">
+    <h3>Celsius to Fahrenheit </h3>
+    <p> celsius : 34 
+             Fahrenheit : {{34 | tempConverter:'F'}} </p>
+    <ul> 
+         <li *ngFor="let f of Farenheit">
+           {{f.value}} ºC --> {{f.value | tempConverter:'F'}} F.
+         </li>
+         
+    </ul>
+</div>
+
+<ul>
+  <li *ngFor="let person of people"> 
+    {{ person.name }}
+  </li>
+ </ul>
+ 
+</div>
 <!-- selectKey define output inside key-events that response to emit result-->
 <!-- keyChange event define inside this template component-->
 <keyboard-events [key]="''"
