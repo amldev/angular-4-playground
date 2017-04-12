@@ -9,6 +9,9 @@
 <button type="button" (click)= "changeLanguage('es')">{{ 'LANG.SPANISH' | translate }}</button>
 <button type="button" (click)= "changeLanguage('en')">{{ 'LANG.ENGLISH' | translate }}</button>
 <p>Apply Credit card mask pipe: {{'343665987286008' | creditCardMask}}</p>
+<p>{{ 'all words in capitalize start' | allWordsCapitalize }} </p>
+<p> Anartz in reverse: "{{ 'Anartz' | reverseStr}}"
+
 <!-- selectKey define output inside key-events that response to emit result-->
 <!-- keyChange event define inside this template component-->
 <keyboard-events [key]="''"
