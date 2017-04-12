@@ -28,6 +28,8 @@ export class AppComponent {
   ];
   Farenheit: any[] = [];
   celcius:any[] = [];
+  f: number = 32;
+  c: number;
   title = 'app works!';
   param = {value: 'Anartz!'};
   keyChange(event) {
