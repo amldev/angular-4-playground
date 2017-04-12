@@ -20,6 +20,8 @@
     <h3>Fahrenheit to Celsius </h3>
     <p> Fahrenheit : 32
              Celsius : {{32 | tempConverter:'C'}} </p>
+             <input type="number" [(ngModel)]="f" value="32"/>
+             {{f | tempConverter:'C'}}
 </div>
  
 <div class="row">
