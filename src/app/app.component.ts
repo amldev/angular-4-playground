@@ -7,6 +7,27 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  //To show with NGFor strings
+  people: any[] = [
+    {
+      "name": "Douglas  Pace"
+    },
+    {
+      "name": "Mcleod  Mueller"
+    },
+    {
+      "name": "Day  Meyers"
+    },
+    {
+      "name": "Aguirre  Ellis"
+    },
+    {
+      "name": "Cook  Tyson"
+    }
+  ];
+  Farenheit: any[] = [];
+  celcius:any[] = [];
   title = 'app works!';
   param = {value: 'Anartz!'};
   keyChange(event) {
@@ -18,6 +39,14 @@ export class AppComponent {
 
       // the lang to use, if the lang isn't available, it will use the current loader to get them
       translate.use('eu');
+
+      for (let i = 0; i < 5; i++)
+      {
+        console.info(i*5);
+        this.Farenheit.push({"value": i*5});
+        this.celcius.push({"value": i*5});
+      }
+      console.info(this.Farenheit[0].value);
   }
 
   changeLanguage(language) {
