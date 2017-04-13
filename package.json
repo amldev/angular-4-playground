@@ -23,7 +23,7 @@
     "@ngx-translate/core": "^6.0.1",
     "@ngx-translate/http-loader": "0.0.3",
     "core-js": "^2.4.1",
-    "ng-2-4-utilities": "git+https://github.com/mugan86/ng-2-4-utilities.git",
+    "ng-2-4-utilities": "git+https://github.com/mugan86/ng-2-4-utilities.git#0.1.1",
     "ng-2-4keyboard-events": "^0.4.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
