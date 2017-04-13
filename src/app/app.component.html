@@ -36,14 +36,9 @@
     </ul>
 </div>
 
-<ul>
-  <li *ngFor="let person of people"> 
-    {{ person.name }}
-  </li>
- </ul>
  
 </div>
 <!-- selectKey define output inside key-events that response to emit result-->
 <!-- keyChange event define inside this template component-->
 <keyboard-events [key]="''"
-        (selectKey)="keyChange($event)"></keyboard-events>
+        (selectKey)="keyChange($event)" [showLog]="'no'"></keyboard-events>
