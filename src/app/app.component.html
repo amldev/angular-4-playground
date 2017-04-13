@@ -12,9 +12,6 @@
 <p>{{ 'all words in capitalize start' | allWordsCapitalize }} </p>
 <p> Anartz in reverse: "{{ 'Anartz' | reverseStr}}"
 
-
-<div class='panel panel-primary'>
-<div class="panel-body">
  
 <div class="row">
     <h3>Fahrenheit to Celsius </h3>
@@ -36,8 +33,14 @@
     </ul>
 </div>
 
- 
+<div class="row">
+    <h3>Math Pipes</h3>
+    <p> SQRT (34): {{34 | mathSqrt}} </p>
+    <p> Pow (2,6): {{p | mathPow:6}} </p>
+
 </div>
+
+ 
 <!-- selectKey define output inside key-events that response to emit result-->
 <!-- keyChange event define inside this template component-->
 <keyboard-events [key]="''"
