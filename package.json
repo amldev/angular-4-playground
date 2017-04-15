@@ -22,6 +22,7 @@
     "@angular/router": "^4.0.0",
     "@ngx-translate/core": "^6.0.1",
     "@ngx-translate/http-loader": "0.0.3",
+    "angular-2-test-library": "git+https://github.com/mugan86/angular-2-test-library.git#0.1.1",
     "core-js": "^2.4.1",
     "ng-2-4keyboard-events": "git+https://github.com/mugan86/key-events-in-angular-2-library.git#v0.4.1",
     "rxjs": "^5.1.0",
