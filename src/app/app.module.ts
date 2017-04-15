@@ -9,7 +9,9 @@ import { KeyboardsEventsModule } from 'ng-2-4keyboard-events';
 import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
+//Custom libraries
 import { HelloLibraryModule, SampleModule } from 'angular-2-test-library';
+import { UtilitiesModule } from 'ng-2-4-utilities';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateHttpLoader(http, 'https://raw.githubusercontent.com/mugan86/angular-4-playground/master/src/assets/i18n/', '.json');
@@ -32,7 +34,8 @@ export function createTranslateLoader(http: Http) {
             }
         }),
     HelloLibraryModule,
-    SampleModule
+    SampleModule,
+    UtilitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent],
