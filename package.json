@@ -24,6 +24,7 @@
     "@ngx-translate/http-loader": "0.0.3",
     "angular-2-test-library": "git+https://github.com/mugan86/angular-2-test-library.git#0.1.3",
     "core-js": "^2.4.1",
+    "ng-2-4-utilities": "git+https://github.com/mugan86/ng-2-4-utilities.git#0.1.6",
     "ng-2-4keyboard-events": "git+https://github.com/mugan86/key-events-in-angular-2-library.git#v0.4.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
