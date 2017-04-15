@@ -11,7 +11,7 @@
 <button type="button" (click)= "changeLanguage('es')">{{ 'LANG.SPANISH' | translate }}</button>
 <button type="button" (click)= "changeLanguage('en')">{{ 'LANG.ENGLISH' | translate }}</button>
 
-<!--<p>Apply Credit card mask pipe: {{'343665987286008' | creditCardMask}}</p>
+<p>Apply Credit card mask pipe: {{'343665987286008' | creditCardMask}}</p>
 <p>{{ 'all words in capitalize start' | allWordsCapitalize }} </p>
 <p> Anartz in reverse: "{{ 'Anartz' | reverseStr}}"</p>
 
@@ -31,7 +31,7 @@
              Fahrenheit : {{34 | tempConverter:'F'}} </p>
     <ul> 
          <li *ngFor="let f of Farenheit">
-           {{f.value}} ºC --> <!--{{f.value | tempConverter:'F'}} F.
+           {{f.value}} ºC --> {{f.value | tempConverter:'F'}} F.
          </li>
          
     </ul>
@@ -42,7 +42,7 @@
     <p> SQRT (34): {{34 | mathSqrt}} </p>
     <p> Pow (2,6): {{p | mathPow:6}} </p>
 
-</div>-->
+</div>
 <div class="row">
   <h3>Image Default Directive</h3>
   <p>Not load correctly image and show img/assets/ directory default image</p>
