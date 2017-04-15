@@ -6,7 +6,7 @@ import { Http, HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { KeyboardsEventsModule } from 'ng-2-4keyboard-events';
-import { UtilitiesModule } from 'ng-2-4-utilities';
+import { SampleModule } from 'angular-2-test';
 import { TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
@@ -30,7 +30,7 @@ export function createTranslateLoader(http: Http) {
                 deps: [Http]
             }
         }),
-    UtilitiesModule
+    SampleModule
   ],
   providers: [],
   bootstrap: [AppComponent],
