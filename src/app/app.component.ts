@@ -1,6 +1,8 @@
 import { Component, HostListener } from '@angular/core';
 window.focus(); // make sure we are on this page before we start typing
 import {TranslateService} from '@ngx-translate/core';
+
+import { CreditCardMaskPipe, TempConverterPipe } from 'ng-2-4-utilities';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -32,6 +34,9 @@ export class AppComponent {
   c: number;
   title = 'app works!';
   param = {value: 'Anartz!'};
+
+  creditCardValueWithTransform: String;
+
   keyChange(event) {
     console.log("Receive event" +  event[0] + " / " + event[1]);
   }
@@ -49,6 +54,10 @@ export class AppComponent {
         this.celcius.push({"value": i*5});
       }
       console.info(this.Farenheit[0].value);
+
+      this.creditCardValueWithTransform = new CreditCardMaskPipe().transform("343665987286008");
+
+      console.log(new TempConverterPipe().transform(32,"C"));
   }
 
   changeLanguage(language) {
